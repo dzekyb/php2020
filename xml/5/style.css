@@ -1,0 +1,25 @@
+fastfood{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+ime, cijena, opis{
+    font-size: 20px;
+    padding: 10px;
+}
+ime{
+    color: #b30b0b;
+    font-weight: bold;
+}
+
+cijena{
+    color: #2ea3f2;
+    font-weight: bold;
+}
+
+hrana{
+    display: flex;
+}

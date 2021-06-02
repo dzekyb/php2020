@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hoteli>
+    <hotel>
+        <naziv>Europa</naziv>
+        <cijena>50</cijena>
+        <ocjena>5</ocjena>
+    </hotel>
+    <hotel>
+        <naziv>Hollywood</naziv>
+        <cijena>45</cijena>
+        <ocjena>4</ocjena>
+    </hotel>
+    <hotel>
+        <naziv>Hills</naziv>
+        <cijena>120</cijena>
+        <ocjena>5</ocjena>
+    </hotel>
+</hoteli>
+
+<!-- Koristeći DOMDocument učitati XML fajl - load() metoda -->
+<!-- Ispisati sve stavke iz svakog hotela kroz listu, tabelu, štagod -->

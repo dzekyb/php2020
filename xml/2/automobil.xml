@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<!DOCTYPE automobil
+[
+    <!ELEMENT automobil (ime, model, tip, karakteristike)>
+    <!ATTLIST automobil class CDATA "">
+    <!ATTLIST automobil id CDATA "">
+    <!ELEMENT ime (#PCDATA)>
+    <!ELEMENT model (#PCDATA)>
+    <!ELEMENT tip (#PCDATA)>
+    <!ELEMENT karakteristike (snagaMotora, brojVrata)>
+    <!ELEMENT snagaMotora (#PCDATA)>
+    <!ELEMENT brojVrata (#PCDATA)>
+]>
+
+<automobil class="automobil" id="prvi">
+    <ime>Rimac</ime>
+    <model>C2</model>
+    <tip>Električno</tip>
+    <karakteristike>
+        <snagaMotora>1.408kW</snagaMotora>
+        <brojVrata>3</brojVrata>
+    </karakteristike>
+</automobil>

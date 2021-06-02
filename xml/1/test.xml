@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE drzava SYSTEM "drzava.dtd">
+
+<drzava oznakaDrzave="BS">
+    <naziv>Bosna i Hercegovina</naziv>
+    <glavniGrad>Sarajevo</glavniGrad>
+    <opis>Ovo je moja država...</opis>
+</drzava>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<proizvodi>
+    <proizvod id="1">
+        <naziv>Galaxy S20</naziv>
+        <proizvodac>Samsung</proizvodac>
+        <cijena>2000</cijena>
+        <kolicina>10</kolicina>
+        <popust>10</popust>
+        <link>www.google.com/search?q=samsung%20galaxy%20s20</link>
+    </proizvod>
+    <proizvod id="2">
+        <naziv>Note 9 Pro</naziv>
+        <proizvodac>Xiaomi</proizvodac>
+        <cijena>500</cijena>
+        <kolicina>30</kolicina>
+        <popust>15</popust>
+        <link>www.google.com/search?q=xiaomi%20note%209%20pro</link>
+    </proizvod>
+    <proizvod id="3">
+        <naziv>iPhone 12 Pro Max</naziv>
+        <proizvodac>Apple</proizvodac>
+        <cijena>2400</cijena>
+        <kolicina>14</kolicina>
+        <popust>0</popust>
+        <link>www.google.com/search?q=Apple%20iPhone%2012%20Pro%20Max</link>
+    </proizvod>
+</proizvodi>

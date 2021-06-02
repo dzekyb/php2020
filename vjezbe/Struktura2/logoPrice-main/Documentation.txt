@@ -1,0 +1,105 @@
+index.php
+- requiring main file where we load proper page
+main.php
+- contains function for loading proper page
+
+INCLUDE FOLDER
+create_question.inc.php
+- validating and sanitizing user input, adding step and questions to matching tables 
+    ## functions ##
+    * validateCalculator - takes one argument and returns an error message if the argument is empty or contains any special character
+    * validateNumber - takes one argument and returns an error message if the argument isnt't a number
+    * validateFileUpload - validating uploaded file. Takes one argument(key of the global $_FILES array), returns an error message if: 
+        file extension isnt' jpeg, jpg, or png
+        error message from $_FILES array isn't 0 or 4
+        file size is greater than 2MB
+    * createStep - takes three arguments: connection, question and calculator id, creates new row in step table
+
+delete_option.inc.php
+- delete option user selected
+    ## functions ##
+    selectOne - takes three arguments: connection, id, query, returns row from database table depending on query
+    delete - takes three arguments: connection, id, query, deletes row from database table
+
+delete_step.inc.php
+- delete step and options selected from user from database
+    ## functions ##
+    * select - takes three arguments: connection, id, query. Returns every matching row from table provided by query
+
+delete.inc.php
+ -delete calculator, questions and options that belong to the calculator 
+    ## functions ##
+    * select - takes three arguments: connection, id, query. Returns every matching row from table provided by query
+    * unlink - removes image file from images folder
+
+
+edit.inc.php 
+- updating and adding steps and options for a specific calculator
+    - check the POST array for saveOptions, submit or saveQuestion keys
+    ### saveOption ###
+    - updating options table with updated data
+    ### submit ###
+    - adding new option to options table
+    ### saveQuestion ###
+    - updating question table with updated data
+ 
+
+file_upload_error_array
+-array containing the error messages from move_uploaded_file function as keys and more user friendly messages as values
+
+functions.inc.php
+-contains functions for validating user input and creating, reading, updating and deleting data from/to database
+
+head.php
+-html head
+
+logout.inc.php
+-loging user out and unseting session and session variables
+
+nav.php
+- html navigation
+
+question_form.php
+-html form for adding question and options
+
+PAGES FOLDER
+add_question.php
+-includes the create_question to save user input to matching tables in database, and includes the question_form
+
+calculator_redirect.php
+- getting calculator id and rendering calculator content, including steps and options
+
+calculators.php
+-rendering user calculators
+
+create_calc.php
+- validating and sanitizing user input and creating calculator
+
+edit.php
+- getting the id of the calculator to render the steps and options
+
+estimate.php
+- calculating the price of the options choosen by the user
+- updating status of the step, and status of the choosen option in matching database tables and rows
+- storing the price in a cookie and displaying it to user
+
+index.php
+- html landing page
+
+login.php
+- sanitizing user input and finding user in database
+
+questions.php
+-  the file includes create_question for storing provided data and question_form for providing the data 
+
+register.php
+- creating the user and redirecting to login page
+    ## functions ##
+    * validateUserInput - takes five arguments: connection, user name, user email, user password, user retype password
+    returns error message if:
+        one of the provided arguments is empty
+        user name contains special characters
+        user email isn't a valid email
+        user email exists in database
+        user password and user retype password don't match
+

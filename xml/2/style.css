@@ -1,0 +1,19 @@
+automobil{
+    display: block;
+    width: 500px;
+    background: rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+ime, model, tip, karakteristike, snagaMotora, brojVrata{
+    display: block;
+}
+ime{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+model, tip, snagaMotora, brojVrata{
+    font-size: 20px;
+    margin: 5px 0;
+}

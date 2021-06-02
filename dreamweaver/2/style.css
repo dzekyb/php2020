@@ -1,0 +1,39 @@
+/* Imenovane boje */
+.prva{
+	color: red;
+}
+/* RGB sistem */
+.druga{
+	color: rgb(255,0,0);
+	width: 100%;
+	padding-top: 12px;
+	padding-left: 22px;
+	padding-right: 12px;
+	padding-bottom: 26px;
+	visibility: visible;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* RGBA sistem */
+.treca{
+	color: rgba(255,0,0,0.70);
+}
+/* Heksadecimalni sistem */
+.cetvrta{
+	color: #FF0000;
+}
+/* HSLA sistem */
+.peta{
+	color: hsla(0,100%,50%, 0.70);
+	background: rgba(0,0,0,0.1);
+	border: 1px solid #000;
+}
+/* HSLA sistem */
+.sesta{
+	color: hsla(0,100%,50%, 0.70);
+	background: rgba(0,0,0,0.1);
+	border: 1px solid #000;
+}
+.wrapper {
+}

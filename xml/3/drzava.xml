@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<drzava xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="drzavaSema.xsd" oznakaDrzave="BS">
+    <naziv>Bosna i Hercegovina</naziv>
+    <glavniGrad>Sarajevo</glavniGrad>
+    <opis>Ovo je moja država...</opis>
+</drzava>

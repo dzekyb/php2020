@@ -1,0 +1,14 @@
+# Zaštita web stranice username-om i passwordom
+AuthType Basic
+AuthName "Please insert your password:"
+AuthUserFile C:/laragon/www/amarbeslija/apache/zastita1/.htpasswd
+Require valid-user
+
+# Prepisivanje .php ekstenzije
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Prepisivanje URL-ova i korištenje GET parametara
+RewriteEngine On
+RewriteRule ^([^\.]+)$ index.php?user=$1 [NC,L,QSA]

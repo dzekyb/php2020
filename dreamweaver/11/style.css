@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.transition{
+	width:100px;
+	height:100px;
+	background: #b30b0b;
+	transition: background 250ms ease-in-out, transform 3s steps(256, start) 1s;
+}
+
+.transition:hover{
+	background: #2ea3f2;
+	transform: rotate(45deg) translateX(10px) translateY(10px);
+	/*position: absolute;
+	left: 100px;*/
+}

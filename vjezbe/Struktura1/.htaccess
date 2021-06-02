@@ -1,0 +1,8 @@
+# This part will load language and page on demand through GET variables
+RewriteEngine On
+RewriteRule ^([a-zA-Z_]+)/([a-zA-Z_]+)$ index.php?language=$1&page=$2 [L]
+
+# Lost password link confirmation or registration confirmation or anything which have some data variable
+# (Example: https://website.com/en/confirm-reset/23dasc9asd9343429843ads)
+# (Example: https://website.com/en/confirm-account/23dasc9asd9asd343429843adasdsas)
+RewriteRule ^([a-zA-Z_]+)/([a-zA-Z_]+)/([a-zA-Z_]+)$ index.php?language=$1&page=$2&data=$3 [L]

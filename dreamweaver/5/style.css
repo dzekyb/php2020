@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+p{
+	font-size: 30px;
+}
+
+p:first-of-type::first-letter{
+	color: #b30b0b;
+	font-size: 60px;
+	padding: 10px;
+}
+p:first-of-type::first-line{
+	color: #b30b0b;
+}
+
+p::selection{
+	color: #FFF;
+	background-color: #000;
+}
+
+
+#prvi, #drugi{
+	background: #b30b0b;
+	color: #FFF;
+	text-align: center;
+	padding: 10px;
+}
+
+#prvi::after{
+	content: ' + CSS Text';
+}
+
+#drugi::before{
+	content: 'Sadržaj: ';
+}
+
+a{
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+}
+a[href*="https://"]::after{
+	content: '[external]';
+	padding-left: 20px;
+	color: #666;
+}
+
+a[href*="https://"]:hover::after{
+	content: "[" attr(href) "]";
+	color: #2ea3f2;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+form{
+	margin-bottom: 500px;
+}
+
+input[type="text"]{
+	background: #FFF;
+	font-size: 30px;
+	border: none;
+	border-bottom: 2px solid #000;
+	color: #333;
+	padding: 5px 10px;
+	transition: all ease-in-out 300ms;
+}
+
+input:focus{
+	outline: none;
+	border-bottom-color: #2ea3f2;
+}
+
+input:enabled{
+	border-bottom-color: #999;
+}
+
+input:disabled{
+	border-bottom-color: orange;	
+}
+
+input:disabled::after{
+	content: " - DISABLED";
+}
+
+
+

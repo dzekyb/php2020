@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automobili>
+    <automobil>
+        <proizvodac>Citroen</proizvodac>
+        <model>C4</model>
+        <cijena>30000</cijena>
+        <specifikacija>
+            <tip>Malo auto</tip>
+            <gorivo>dizel</gorivo>
+            <godina>2020</godina>
+            <potrosnja>
+                <gradska>8 litara</gradska>
+                <otvorena>5 litara</otvorena>
+            </potrosnja>
+        </specifikacija>
+    </automobil>
+    <automobil>
+        <proizvodac>Opel</proizvodac>
+        <model>Insignia</model>
+        <cijena>35000</cijena>
+        <specifikacija>
+            <tip>Malo auto</tip>
+            <gorivo>benzin</gorivo>
+            <godina>2021</godina>
+            <potrosnja>
+                <gradska>8 litara</gradska>
+                <otvorena>5 litara</otvorena>
+            </potrosnja>
+        </specifikacija>
+    </automobil>
+</automobili>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="firstname">Insert your name</label>
+        <input type="text" name="firstname" onkeyup="showHint(this.value)">
+    </form>
+    <h1>Suggestions:</h1>
+    <p class="hint"></p>
+
+    <script>
+        function showHint(firstname){
+            if(firstname.length == 0){
+                document.getElementsByClassName('hint')[0].innerHTML = "";
+                return;
+            }else{
+                var ajax = new XMLHttpRequest();
+                ajax.onreadystatechange = function(){
+                    if(this.readyState == 4 && this.status == 200){
+                        document.getElementsByClassName('hint')[0].innerHTML = this.responseText;
+                    }else{
+                        document.getElementsByClassName('hint')[0].innerHTML = "No suggestions!";
+                    }
+                };
+
+                ajax.open("GET", "hint.php?firstname=" + firstname, true);
+                ajax.send();
+            }
+        }
+    </script>
+</body>
+</html>

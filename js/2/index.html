@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="firstname">Firstname:</label>
+        <input type="text" name="firstname" class="input">
+        <br>
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" class="input">
+        <br>
+        <input id="submit" type="submit" value="Send">
+    </form>
+    <div id="output"></div>
+    <script>
+        document.getElementById("submit").addEventListener('click', function(e){
+            // Sprječavanje da se forma pošalje po defaultu
+            e.preventDefault();
+            var elements = document.getElementsByClassName('input');
+            var formData = new FormData();
+
+            for(var i = 0; i < elements.length; i++){
+                formData.append(elements[i].name, elements[i].value);
+                document.getElementsByClassName('input')[i].value = "";
+            }
+
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById('output').innerHTML = this.responseText;
+                }else{
+                    document.getElementById('output').innerHTML = "Sorry. There was an error!";
+                }
+            }
+            ajax.open("POST", "ajax.php");
+            ajax.send(formData);
+
+        });
+    </script>
+</body>
+</html>

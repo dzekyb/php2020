@@ -1,0 +1,17 @@
+@charset "utf-8";
+.background{
+	/*
+	background-color: #000000;
+	background-image: url('nature.jpg');
+	width: 100vw;
+	height: 100vh;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position:bottom;
+	*/
+	background: #000 url('nature.jpg') no-repeat scroll center;
+	background-size:cover;
+	padding: 20px;
+	border: 1px solid #000;
+	background-clip:content-box;
+}

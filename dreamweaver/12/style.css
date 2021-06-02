@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+.animation{
+	background: #b30b0b;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: move 10s infinite;
+	animation-delay: 2s;
+}
+
+.animation:hover{
+	animation-play-state: paused;
+}
+
+.animation-2{
+	animation: move 10s infinite ease-in-out;
+	animation-delay: 2s;
+	animation-direction: alternate;
+}
+.animation-3{
+	background: #b30b0b;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.wrapper:hover .animation-3{
+	animation: move 7s infinite;
+}
+@keyframes move{
+	0%{
+		top: 0;
+		left:0;
+		background: #2ea3f2;
+	}
+	25%{
+		left:60%;
+		top: 50%;
+		transform: rotate(360deg) scale(1.2);
+	}
+	50%{
+		left: 30%;
+		top: 80%;
+		background: #066;
+		transform: rotate(45deg) scale(0.5);
+	}
+	75%{
+		top: 50%;
+	}
+	100%{
+		left: 0;
+		top: 0;
+		background: #b30b0b;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

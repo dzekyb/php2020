@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<izdanja>
+    <knjiga>
+        <naslov>Majstor i Margarita</naslov>
+        <autor>Mihail Bulgakov</autor>
+    </knjiga>
+    <knjiga>
+        <naslov>Zločin i kazna</naslov>
+        <autor>Fjodor M. Dostojevski</autor>
+    </knjiga>
+</izdanja>

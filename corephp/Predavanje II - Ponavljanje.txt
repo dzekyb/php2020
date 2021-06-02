@@ -1,0 +1,35 @@
+Promjenljive:
+
+- mogu se mijenjati
+- mogu biti različitog tipa podataka
+- dolar znak na početku mora stajati
+- nosilac vrijednosti
+- uglavnom sve malim slovima 
+- ne smije imati razmake
+- ne smije koristiti specijalne znake
+- poslije dolara mora biti slovo ili donja crta
+- string se piše sa navodnicima
+- jednostruki ne mogu interpolirati promjenljivu,
+dok dvostruki navodnici mogu
+- case sensitive
+
+konstante:
+- ne mogu se mijenjati
+- nemaju dolar znak
+- velika slova
+- nema razmaka
+
+tipovi podataka:
+- prosti i složeni tipovi podataka
+- PHP dinamički dodjeljuje tipove podataka
+- PHP je slabo tipiziran programski jezik
+- Prosti:
+	- integer (cjelobrojni)
+	- float (decimalni)
+	- string (tekstualni)
+	- boolean (tačno - netačno)
+- Složeni:
+	- niz
+	- objekat
+	- resource 
+	- null

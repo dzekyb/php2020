@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    /* Ovdje stavite flex, i centrirate sa njim */
+}
+.animate{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    /* Ukinete sve translacije ovdje i u keyframes */
+    transform: translate(-50%,-50%);
+    width: 10vw;
+    height: 10vw;
+    background: #2a2a2a;
+    animation: move 6s infinite 2s;
+}
+
+@keyframes move{
+    0%{
+        top: 50%;
+        left: 50%;
+    }
+    16%{
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+    }
+    33%{
+        top: 0;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    49%{
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%,-100%);
+    }
+    64%{
+        top: 100%;
+        left: 0;
+        transform: translateY(-100%);
+    }
+    80%{
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+    }
+    100%{
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}

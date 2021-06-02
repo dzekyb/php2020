@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<!DOCTYPE fastfood
+[
+    <!ELEMENT fastfood (hrana+)>
+    <!ELEMENT hrana (ime, cijena, opis)>
+    <!ELEMENT ime (#PCDATA)>
+    <!ELEMENT cijena (#PCDATA)>
+    <!ELEMENT opis (#PCDATA)>
+]>
+<fastfood>
+    <hrana>
+        <ime>Hamburger</ime>
+        <cijena>5.00</cijena>
+        <opis>Ovo je hamburger.</opis>
+    </hrana>
+    <hrana>
+        <ime>Pileći fileti</ime>
+        <cijena>6.00</cijena>
+        <opis>Ovo su pileći fileti.</opis>
+    </hrana>
+    <hrana>
+        <ime>Kobasice</ime>
+        <cijena>4.00</cijena>
+        <opis>Ovo su kobasice.</opis>
+    </hrana>
+</fastfood>

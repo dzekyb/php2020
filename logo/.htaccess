@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# This part will load page on demand through GET variables
+RewriteRule ^([0-9a-zA-Z_]+)$ index.php?page=$1 [L]
+
+RewriteRule ^([a-zA-Z_]+)/([0-9a-zA-Z_]+)$ index.php?page=$1&id=$2 [L]

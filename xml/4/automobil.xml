@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<automobil xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="automobilSema.xsd">
+    <ime>Rimac</ime>
+    <model>C2</model>
+    <tip>Električno</tip>
+    <karakteristike>
+        <snagaMotora>1.408kW</snagaMotora>
+        <brojVrata>3</brojVrata>
+    </karakteristike>
+</automobil>

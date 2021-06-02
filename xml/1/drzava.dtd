@@ -1,0 +1,5 @@
+<!ELEMENT drzava (naziv, glavniGrad, opis)>
+<!ATTLIST drzava oznakaDrzave CDATA "">
+<!ELEMENT naziv (#PCDATA)>
+<!ELEMENT glavniGrad (#PCDATA)>
+<!ELEMENT opis (#PCDATA)>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-model="stavka" />
+      <button type="button" v-on:click="dodajStavku">Dodaj novu stavku</button>
+      <ul id="lista-stavki"></ul>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          stavka: ""
+        },
+        methods: {
+          dodajStavku: function () {
+            var stavke = document.getElementById("lista-stavki").innerHTML;
+            stavke += "<li>" + this.stavka + "</li>";
+            document.getElementById("lista-stavki").innerHTML = stavke;
+            this.stavka = "";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

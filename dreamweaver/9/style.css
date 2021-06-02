@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*
+Responsive Design:
+
+a) Morate imati viewport tag
+b) Dinamičke mjerne jedinice: %, vh, vw, em, rem
+c) Pikseli nisu nužno loši (ponekad) kod paddinga,
+margina, bordera i slično
+d) Flexbox i/ili grid za layoute
+e) Media queries / upiti 
+f) Sve slike moraju imati širinu da bi se skalirale (u procentima)
+
+*/
+*{
+	font-family: sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	background: rgba(0,0,0,0.2);
+	transition: all 500ms ease-in-out ;
+}
+
+@media screen and (min-width: 1501px){
+	#wrapper{
+		background: #333;
+		color: #fff;
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+	#wrapper{
+		background: #2ea3f2;
+		color: #fff;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1199px){
+	#wrapper{
+		background: #b30b0b;
+		color: #fff;
+		width: 80%;
+	}
+}
+
+
+@media screen and (max-width: 699px){
+	#wrapper{
+		background: rgba(43,171,113,1.00);
+		color: #fff;
+		width: 70%;
+	}
+}
+
+
+
+
+
+
+
+
+

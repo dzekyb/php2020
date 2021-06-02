@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kupci><kupac id="181102398">
+<ime>Pero</ime>
+<prezime>Djetlić</prezime>
+<grad>Sarajevo</grad>
+<kartica>1111 2222 3333 4444</kartica>
+<registracija>08.05.2021</registracija>
+</kupac>
+<kupac id="6356456456">
+<ime>Duško</ime>
+<prezime>Dugouško</prezime>
+<grad>Zenica</grad>
+<kartica>2222 3333 4444  5555</kartica>
+<registracija>07.05.2021</registracija>
+</kupac>
+</kupci>

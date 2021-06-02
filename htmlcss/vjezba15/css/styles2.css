@@ -1,0 +1,127 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/iconfont/MaterialIcons-Regular.ttf);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 3vh 5%;
+    z-index: 2;
+}
+
+.wrapper header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper header .logo span{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.wrapper header nav ul{
+    display: inline-block;
+}
+
+.wrapper header nav ul li{
+    display: inline-block;
+}
+
+.wrapper header nav ul li a{
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.wrapper main .hero-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('../assets/images/header-background.png');
+    background-size: cover;
+    z-index: 1;
+}
+
+.wrapper main .hero-section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: 
+    -webkit-linear-gradient( 90deg, rgba(108,76,206, .9) 0%, 
+    rgba(127,86,253, .9) 100%);
+    z-index: -1;
+}
+
+.wrapper main .hero-section .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper main .hero-section h1,
+.wrapper main .hero-section h2{
+    color: #FFFFFF;
+    font-size: 50px;
+    margin: 5px 0;
+}
+
+.wrapper main .hero-section .container a{
+    color: #7f56fd;
+    background-color: #FFF;
+    padding: 17px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 40px;
+}
+.wrapper main .hero-section a:hover{
+    color: #23527c;
+}
+
+.wrapper main .hero-section .jobs{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.wrapper main .hero-section .social{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    padding: 13px 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper main .hero-section .social a{
+    color: #FFFFFF;
+}
