@@ -5,7 +5,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        // Trimujemo
+        // Trimujemo 
         $email = trim($email);
         $password = trim($password);
 
