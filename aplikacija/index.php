@@ -16,9 +16,7 @@ session_start();
 
         <?php
             if(isset($_SESSION['id']) && isset($_SESSION['ime']) && isset($_SESSION['prezime']) && isset($_SESSION['status'])){
-                ?>
-                    <h1>Dobrodošli</h1>
-                <?php
+                require 'dashboard.php';
             }else{
                 ?>
                 <div class="container">

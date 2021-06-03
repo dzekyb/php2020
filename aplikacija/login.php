@@ -5,7 +5,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        // Trimujemo 
+        // Trimujemo
         $email = trim($email);
         $password = trim($password);
 
@@ -28,7 +28,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         $query = "SELECT * FROM korisnik WHERE email = '{$email}' AND password = '{$password}'";
         $result = $sql->query($query);
 
-        // Ispitujete rezultat
+        // Ispitujete rezultate 
         if($result->num_rows > 0){
             while($row = $result->fetch_assoc()){
                 // U $row imamo asocijativni niz
